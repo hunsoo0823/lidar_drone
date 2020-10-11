@@ -65,6 +65,10 @@ add_executable(drone_teleop_key src/drone_teleop_key.cpp)
 add_dependencies(drone_teleop_key ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(drone_teleop_key ${catkin_LIBRARIES})
 
+# drone_key
+add_executable(drone_key src/drone_key.cpp)
+add_dependencies(drone_key ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(drone_key ${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

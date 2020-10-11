@@ -80,6 +80,7 @@ int main(int argc, char **argv)
             }
         }
 
+    
 	theta = wn*count*0.05;
 
     pose.pose.position.x = r*sin(theta);
@@ -91,6 +92,7 @@ int main(int argc, char **argv)
     local_pos_pub.publish(pose);
     ros::spinOnce();
     rate.sleep();
+    
     }
 
     return 0;
