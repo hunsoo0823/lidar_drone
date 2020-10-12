@@ -70,6 +70,12 @@ add_executable(drone_key src/drone_key.cpp)
 add_dependencies(drone_key ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(drone_key ${catkin_LIBRARIES})
 
+#drone_land
+add_executable(drone_land src/drone_land.cpp)
+add_dependencies(drone_land ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(drone_land ${catkin_LIBRARIES})
+
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
